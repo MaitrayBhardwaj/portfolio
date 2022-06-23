@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Inconsolata", sans-serif;
+}
+
+button{
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+}
+
+body{
+	display: flex;
+	overflow: hidden;
+}
+
+.d-none{
+	display: none !important;
+}
+
+.w-0{
+	width: 0 !important;
+}
+
+.navbar{
+	height: 100vh;
+	position: fixed;
+	width: 30vw;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	transition: width 1s ease;
+	box-shadow: rgba(0,0,0,0.5) 0px 0px 10px;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.menuLabel {
+	cursor: pointer;
+	padding: 0 0.5em;
+	display: flex;
+	align-items: center;
+}
+
+.menuLabel:hover{
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2));
+}
+
+.navbar .menuLabel span{
+	font-size: 1.2em;
+}
+
+.navbar .menuLabel button{
+	font-size: 2em;
+	margin: 0.5em;
+	margin-left: 0.25em;
+	color: black;
+}
+
+#home, #about{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.banner .menuToggle{
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0.5em;
+	font-size: 2em;
+}
+
+.banner{
+	text-align: center;
+	height: 100vh;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #191919;
+	flex-direction: column;
+	background-image: linear-gradient(rgba(0,0,0,1), rgba(255,255,255,0.2));
+	padding: 0.5em;
+}
+
+.welcome{
+	letter-spacing: 3px;
+	margin: 1em 0 0 0;
+	text-align: center;
+}
+
+.banner > h3{
+	margin: 1em 0;
+}
+
+.banner small{
+	margin: 1em 0;
+	font-size: 1.2em;
+}
+
+.contacts, .skills{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	max-width: 50vw;
+}
+
+.contact, .skill{
+	border: 1px solid transparent;
+	padding: 5px;
+	transition: border-bottom transform 0.2s ease;
+}
+
+.contact img, .skill img{
+	width: 40px;
+	margin: 0 0.5em;
+}
+
+.contact:hover, .skill:hover{
+	border-bottom-color: white;
+	transform: scale(1.2);
+}
+
+.selfImg{
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+@media (max-width: 1000px) {
+	.navbar {
+		width: 40vw;
+	}
+}
+
+@media (max-width: 900px) {
+	.navbar{
+		width: 50vw;
+	}
+}
+
+@media (max-width: 500px) {
+	.navbar{
+		width: 70vw;
+	}
+}
