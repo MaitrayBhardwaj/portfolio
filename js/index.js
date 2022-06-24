@@ -49,6 +49,7 @@ const toggleSection = (section) => {
 		activeSection.classList.add('d-none')
 		activeSection = section
 	}
+	navbar.classList.add('w-0')
 }
 
 for(let i = 0; i < menuBtns.length; i++){
