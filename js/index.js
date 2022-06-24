@@ -65,3 +65,18 @@ about.addEventListener('click', toggleNavbar)
 
 homeBtn.addEventListener('click', () => toggleSection(home))
 aboutBtn.addEventListener('click', () => toggleSection(about))
+
+const copyMailToClipboard = () => {
+	let copyText = "maitraybhardwaj@gmail.com";
+	navigator.clipboard.writeText(copyText).then(() => {
+		const copyNotif = document.createElement('div')
+		copyNotif.classList.add('notif')
+		copyNotif.innerHTML = "Copied to Clipboard"
+		document.body.append(copyNotif)
+		setTimeout(() => copyNotif.remove(), 2500)
+	});
+}
+
+const email = document.querySelector('.email')
+
+email.addEventListener('click', copyMailToClipboard)
