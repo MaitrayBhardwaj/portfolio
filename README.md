@@ -1,5 +1,5 @@
 # My Portfolio
 
-Hosted on: https://maitraybhardwaj.github.io/portfolio/ and https://maitraybhardwaj.netlify.app
+Built using HTML5, CSS3 and vanilla JS.
 
-*Still under development*
+Hosted on: https://maitraybhardwaj.github.io/portfolio/ and https://maitraybhardwaj.netlify.app
