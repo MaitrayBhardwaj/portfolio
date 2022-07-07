@@ -106,12 +106,30 @@ const projectList = [
 		]
 	},
 	{
-		name: "OrderIn",
-		url: "https://github.com/MaitrayBhardwaj/OrderIn",
-		hostedOn: null,
-		desc: "A simple interface which makes ordering food on outlets easy and fast(under development)",
+		name: "Tenzies",
+		url: "https://github.com/MaitrayBhardwaj/tenzies-game",
+		hostedOn: "https://maitraybhardwaj.github.io/tenzies-game",
+		desc: "React app which simulates the Tenzies game",
 		techUsed: [
-			"HTML5", "CSS3", "JS", "Bootstrap", "NodeJS", "ExpressJS", "MongoDB"
+			"CSS3", "React"
+		]
+	},
+	{
+		name: "Quizzical",
+		url: "https://github.com/MaitrayBhardwaj/quizzical",
+		hostedOn: "https://maitraybhardwaj.github.io/quizzical",
+		desc: "Simple quiz app built with React",
+		techUsed: [
+			"CSS3", "React", "Axios"
+		]
+	},
+	{
+		name: "Chat App",
+		url: "https://github.com/MaitrayBhardwaj/chat-app",
+		hostedOn: "https://maitraybhardwaj.github.io/chat-app",
+		desc: "Real time chat app built with React and Firebase",
+		techUsed: [
+			"CSS3", "React", "Firebase", "Firestore"
 		]
 	}
 ]
